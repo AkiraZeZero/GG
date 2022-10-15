@@ -1,6 +1,7 @@
 import React from "react";
 import {useContext, useEffect, useState, useCallback} from 'react'
 import axios from 'axios'
+import GameCard from "./GameCard";
 
 import AuthContext from '../store/authContext'
 

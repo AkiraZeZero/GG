@@ -21,6 +21,7 @@ function App() {
           element={!authCtx.token ? <Auth /> : <Navigate to="/home" />}
           />
           <Route path="/home" element={authCtx.token ? <Home /> : <Navigate to="/" />}/>
+          <Route>wishlist later</Route>
       </Routes>
           </main>
       <Footer/>
