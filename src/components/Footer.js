@@ -2,7 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
+      <div className="footerContainer">
     <footer className="footer">
+
         <div className="footerBtn">
           <a href="https://github.com/AkiraZeZero" target="blank">
             <img className="footerImg" src="https://pnggrid.com/wp-content/uploads/2022/03/Github-Logo-White.png" />
@@ -10,7 +12,7 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/in/kiara-ocasio-rosado-6263a0250/"
             target="blank"
-          >
+            >
             <img className="footerImg" src="https://www.pngfind.com/pngs/m/101-1013043_download-linkedin-logo-round-png-transparent-png.png" />
           </a>
           <a href="https://docs.google.com/document/d/1DuCiktdiyHCWOEMx4VOCEyAqDwd3ok2MR1JLoUaNJTw/view#heading=h.1gj26w7s0slh" target="blank">
@@ -18,6 +20,7 @@ const Footer = () => {
           </a>
         </div>
     </footer>
+            </div>
   );
 };
 

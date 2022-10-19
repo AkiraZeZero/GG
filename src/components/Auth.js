@@ -35,7 +35,7 @@ const Auth = () => {
     });
 };
   return (
-    <main>
+    <main className="mainLogin">
       <h1>Welcome!</h1>
       <form className="auth-form" onSubmit={submitHandler}>
         <input

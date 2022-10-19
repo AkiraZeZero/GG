@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Auth from "./components/Auth";
 import { useContext } from "react";
 import AuthContext from "./store/authContext";
-// import Canvas from "./components/Canvas"
+import Wishlist from "./components/Wishlist"
 
 function App() {
   const authCtx = useContext(AuthContext)
@@ -21,10 +21,14 @@ function App() {
           element={!authCtx.token ? <Auth /> : <Navigate to="/home" />}
           />
           <Route path="/home" element={authCtx.token ? <Home /> : <Navigate to="/" />}/>
-          <Route>wishlist later</Route>
+          <Route path="/wishlist" element={authCtx.token? <Wishlist/> : <Navigate to="/"/>}></Route>
       </Routes>
           </main>
-      <Footer/>
+      <Footer style={{
+  position: "absolute",
+  bottom: 0,
+  left: 0,
+}}/>
     </div>
   );
 }

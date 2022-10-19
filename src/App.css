@@ -7,6 +7,9 @@
   align-items: center;
   min-height: 100vh;
   width: 100vw;
+  position: relative;
+  
+  overflow-x: hidden;
 }
 html{
   background: url("https://wallpaperaccess.com/full/31367.jpg") no-repeat center center fixed;
@@ -25,7 +28,7 @@ html{
   display: flex;
   align-items: center;
   padding: 8px;
-  height: 50px;
+  height: 7vh;
 	margin-right: 10px;
   color: aliceblue;
 }
@@ -40,6 +43,7 @@ html{
   box-sizing: border-box;
   padding: 5px;
   color: white;
+  cursor: default;
 }
 
 .main-nav {
@@ -49,23 +53,38 @@ html{
   align-items: center;
   padding: 5px;
   width: 250px;
-  /* background-color: white; */
 }
+
+a {
+  color: white;
+}
+
+a:link {
+  font-size: 1em;
+  font-weight: 1000;
+  text-decoration: none;
+}
+
 .navBtn{
   display: flex;
   justify-content: space-evenly;
-  background-color: aliceblue;
+  align-items: center;
+  gap: 20px;
+  /* background-color: aliceblue; */
 }
 .active {
-  border-radius: 3em;
-  /* background-color: aliceblue; */
+  color: white;
 }
 
 .logout-btn {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
   font-weight: 1000;
-  border-radius: 3em;
-  background-color: white;
+  font-size: 1em;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 
@@ -115,42 +134,144 @@ main {
   /* background-color: yellow; */
 }
 
+
+.gameDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* height: 80%; */
+  /* background-color: blueviolet; */
+}
+
 .gameCard {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   background-color: rgb(24, 23, 23);
   width: 20%;
-  min-height: 40%;
-  padding: 20px 7px;
+  min-height: 35%;
+  /* height: 800px; */
+  /* padding: 20px 7px; */
   box-sizing: border-box;
   border-style: solid;
   border-width: 0.2em;
   border-color: white;
+  border-radius: .7em;
+}
+
+.gameCard:hover {
+
+  transition: .3s;
+  box-shadow: 1px 1px 15px aquamarine;
 }
 
 .gameImg {
-  height: 50%;
-  width: 75%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 13em;
+  border-radius: .5em;
+  /* height: 55%; */
+}
+
+.gameName {
+  cursor: default;
+  font-size: 1em;
+  text-align: center;
+  height: 2em;
+  /* background-color: aqua; */
+}
+.ptagContainer {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  font-size: 1em;
+  font-weight: 1000;
+  text-align: center;
+  cursor: default;
+  padding: 5px;
+  gap: 5px;
+  /* background-color: khaki; */
+}
+
+.ptag {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 1000;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 3em;
+  padding: 5px 8px;
+  border-style: solid;
+  border-color: white;
+  background-color: rgb(24, 23, 23);
+  color: white;
+}
+
+.btnContainer {
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .gameBtn {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 1000;
+  color: white;
+  background-color: transparent;
   border-radius: 1em;
+  border-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.gameBtn:hover {
+  cursor: pointer;
+  transition: .5s;
+  box-shadow: 1px 1px 10px chartreuse;
+}
+
+.gameBtnRed {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 1000;
+  color: white;
+  background-color: transparent;
+  border-radius: 1em;
+  border-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.gameBtnRed:hover {
+  cursor: pointer;
+  transition: .5s;
+  box-shadow: 1px 1px 10px red;
+}
+
+.Wishlist {
+  background-color: aqua;
 }
 
 /* footer style */
 
-.footer {
+footer {
   /* position: absolute; */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  bottom: 0;
-  width: 100%;
+  width: 100vw;
   box-sizing: border-box;
   padding: 5px;
   background-color: rgb(24, 23, 23);
   height: 15vh;
+  flex-shrink: 0;
 }
 
 .footerBtn {
@@ -166,3 +287,6 @@ main {
   border-radius: 50em;
 }
 
+main {
+  height: 74.1vh;
+}
