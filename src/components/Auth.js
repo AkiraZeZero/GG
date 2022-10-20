@@ -35,7 +35,7 @@ const Auth = () => {
     });
 };
   return (
-    <main className="mainLogin">
+    <div className="mainLogin">
       <h1>Welcome!</h1>
       <form className="auth-form" onSubmit={submitHandler}>
         <input
@@ -65,7 +65,7 @@ const Auth = () => {
       <button className="form-btn" onClick={() => setRegister(!register)}>
         Need to {register ? "Login" : "Sign Up"}?
       </button>
-    </main>
+    </div>
   );
 };
 

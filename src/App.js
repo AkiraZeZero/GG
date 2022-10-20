@@ -23,12 +23,9 @@ function App() {
           <Route path="/home" element={authCtx.token ? <Home /> : <Navigate to="/" />}/>
           <Route path="/wishlist" element={authCtx.token? <Wishlist/> : <Navigate to="/"/>}></Route>
       </Routes>
+      <Footer/>
           </main>
-      <Footer style={{
-  position: "absolute",
-  bottom: 0,
-  left: 0,
-}}/>
+      
     </div>
   );
 }
