@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
 
         <div className="footerBtn">
-          <a href="https://github.com/AkiraZeZero" target="blank">
+          <a href="https://github.com/AkiraZeZero?tab=repositories" target="blank">
             <img className="footerImg" src="https://pnggrid.com/wp-content/uploads/2022/03/Github-Logo-White.png" />
           </a>
           <a
